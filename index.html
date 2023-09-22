@@ -38,12 +38,15 @@
         <section id="contact">
             <h2>Contact</h2>
             <!-- Add your contact details here -->
-            <p>Email: your-email@example.com</p>
+            <p>Email: henryphutchinson@gmail.com</p>
         </section>
     </main>
 
     <footer>
-        <p>© 2022 Your Name</p>
+        <p>© <span id="copyright-year"> Henry Hutchinson</p>
+        <script>
+            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+        </script>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
