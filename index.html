@@ -1,77 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- HEADER/DISCLAIMER
+ 
+Project:  Project1-About Me
+Name: Henry Hutchinson
+Submitted: 2024-05-17
+ 
+I declare that the following source code was written by me, or provided
+by the instructor for this project. I understand that copying source
+code from any other source, providing source code to another student, 
+or leaving my code on a public web site constitutes cheating.
+I acknowledge that  If I am found in violation of this policy this may result
+in a zero grade, a permanent record on file and possibly immediate failure of the class.
+ 
+Reflection (1-2 paragraphs): 
+HTML is so exciting! I wish I could say to be honest html is the drag of the majority of my projects I really enjoy the semantics and the nitty gritty of coding and html seems to take that away from me. Aside from the part where it isn't a turing complete language, but with that said I do understand it's purpose in the modern atmosphere and it does make designing UIs so much easier than having to write an engine from scratch in C every time so for that I am grateful for it even if I wish I could do more stuff in raw HTML, but I suppose javascript will have to suffice with that gap.
+ 
+-->
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="A Personal Portfolio website for Henry Hutchinson" content="">
-  <meta name="Henry Hutchinson" content="">
-  <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-
-  <title>Henry Hutchinson - Portfolio</title>
-
-  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
-  <link href="bootstrap.min.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
-
+	<title>About: Henry Hutchinson</title>
+	<link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="./index.html">CS NERD</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./projects.html">Projects</a>
-        </li>
-    </div>
-  </nav>
-
-  <main role="main" class="container">
-    <div class="starter-template">
-      <h1>/User/Henry Hutchinson/Home</h1>
-      <p class="lead">I'm a computer science nerd who for whatever reason decided to venture out of my basement and talk
-        to people.</p>
-    </div>
-
-  </main>
-
-  <footer>
-    <section id="contact">
-      <h4>Contact</h4>
-      <!-- Add your contact details here -->
-      <p class="footer"><a href="mailto:henryphutchinson@gmail.com" class="footer">HenryPHutchinson@gmail.com</a></p>
-      <p class="footer"><a href="https://www.linkedin.com/in/henry-hutchinson-00487819a/" class="footer">LinkedIn: Henry
-          Hutchinson</a></p>
-      <p class="footer"><a href="https://github.com/HenryH054" class="footer">GitHub: HenryH054</a></p>
-      <p class="footer">Phone: (801)564-0881</p>
-    </section>
-    <p>© <span id="copyright-year"></p>
-    <!-- Ensure to change your name into the copywright info-->
-    <script>
-      document.getElementById('copyright-year').textContent = new Date().getFullYear() + " Henry Hutchinson";
-    </script>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-  <script src="../../assets/js/vendor/popper.min.js"></script>
-  <script src="../../dist/js/bootstrap.min.js"></script>
-
-
+	<main>
+		<header>
+			<img class="headImage" src="img/henry.jpg" alt="Picture of me" width=300>
+			<h1>Henry Hutchinson</h1>
+		</header>
+		<section class="poem">
+			<h2>A Wizard of Today</h2>
+			<p>
+				We have long since lived in a world where we say magic no longer exists, but if we
+				simply open our eyes we are surrounded by magic. Afterall,
+				what's more magical saying some words to have a light turn appear from thin air or
+				uttering some words
+				into your phone and a technicolor display appears as if from no where.
+			</p>
+			<p class="haiku">
+				In circuits and code,<br>
+				Magic whispers through the wires—<br>
+				Logic's light unfolds.
+			</p>
+		</section>
+		<section class="essay">
+			<h2>My Interests</h2>
+			<p>The only thing more interesting to me than the magic in which we encompass ourselves about
+				everyday is learning to harness it and have it do as I wish. It allows me to simplify my
+				life, better the lives of the people around me, and hopefully make at least a bit of
+				money at some point. Learning to harness that magic is also a puzzle that seemingly
+				endlessly unfolds as we layer through the though process of the engineers before us and
+				as we understand that we learn to harness magic as a true wizard would.</p>
+			<p>As exciting as being a wizard is though being away from it all is such a relieving feeling.
+				Getting to the middle of a forest or barren wasteland and being surrounded by nothing
+				except my thoughts, the people I'm with, and nature is perhaps my favorite feeling. It
+				allows for a level of decompression that doesn't exist elsewhere and it allows for a
+				type of peace as we reconnect with our ancestors who knew only those barren wastelands
+				and lush forests</p>
+			<p>Next up I love my cat, she's adorable and I love watching her be playful it reminds me of a
+				sort of inner child that I use to possess and now have to drag out. Having my adorable
+				little cat, named Yoki bytheway, also allows for me to ground myself into what matters
+				and what doesn't. I had a bad nack of stressing myself into oblivion before I realized
+				that I could just take breaks and be myself for a little and Yoki is what especially
+				reminds me of that when I'm 6 hours deep into homework with 4 more hours to go.</p>
+		</section>
+		<section class="personalInfo">
+			<h2>Personal Info</h2>
+			<ul class="resSection">
+				<li><strong>Major:</strong> Computer Science - Emphasis Secure Computing</li>
+				<li><strong>Year:</strong> Junior at UVU Honors College</li>
+				<li><strong>Highschool:</strong> Farmington High School 2021</li>
+				<li><strong>Ice Cream</strong> Cookies and Cream</li>
+			</ul>
+		</section>
+		<section class="favoriteBooks">
+			<h2>Favorite Books</h2>
+			<ol class="books" type="I">
+				<li>The C Programming Language<br>
+					<a class="authors"
+						href="https://en.wikipedia.org/wiki/The_C_Programming_Language">Brian
+						Kernighan and Dennis Ritchie</a>
+				</li>
+				<li class="books">What if?<br>
+					<a class="authors" href="https://xkcd.com/what-if/">Randall Munroe</a>
+				</li>
+				<li class="books">The Hunt for Red October<br>
+					<a class="authors"
+						href="https://en.wikipedia.org/wiki/The_Hunt_for_Red_October">Tom
+						Clancy</a>
+				</li>
+				<li class="books">Fahrenheit 451<br>
+					<a class="authors" href="https://en.wikipedia.org/wiki/Fahrenheit_451">Ray
+						Bradbury</a>
+				</li>
+				<li class="books">Halo: Contact Harvest<br>
+					<a class="authors" href="https://www.halopedia.org/Halo:_Contact_Harvest">Joseph
+						Staten</a>
+				</li>
+			</ol>
+		</section>
+		<section class="schedule">
+			<h2>Class Schedule</h2>
+			<table>
+				<tr>
+					<th></th>
+					<th>Monday</th>
+					<th>Tuesday</th>
+					<th>Wednesday</th>
+					<th>Thursday</th>
+					<th>Friday</th>
+				</tr>
+				<tr>
+					<th>12:00</th>
+					<td rowspan="3" class="num">Numerical</td>
+					<td rowspan="2" class="eth">Ethics</td>
+					<td rowspan="3" class="num">Numerical</td>
+					<td rowspan="2" class="eth">Ethics</td>
+					<td rowspan="5" class="cs">CS Club</td>
+				</tr>
+				<tr>
+					<th>12:30</th>
+				</tr>
+				<tr>
+					<th>13:00</th>
+					<td class="bre">Break</td>
+					<td class="bre">Break</td>
+				</tr>
+				<tr>
+					<th>13:30</th>
+					<td rowspan="2" class="web">Web Dev</td>
+					<td rowspan="2" class="sof">Software</td>
+					<td rowspan="2" class="web">Web Dev</td>
+					<td rowspan="2" class="sof">Software</td>
+				</tr>
+				<tr>
+					<th>14:00</th>
+				</tr>
+				<tr>
+					<th>14:30</th>
+					<td rowspan="2" , colspan="5" class="gym">Gym</td>
+				</tr>
+				<tr>
+					<th>15:00</th>
+				</tr>
+			</table>
+		</section>
+	</main>
+	<script src="js/main.js"></script>
+	</script>
 </body>
 
 </html>

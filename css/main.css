@@ -1,0 +1,60 @@
+
+body{
+	max-width: 600px;
+	margin: auto;
+	box-sizing: border-box;
+	background-color: gray;
+	font-family: Arial;
+}
+.res-section {
+	color:black;
+}
+.headImage {
+	border-radius: 50%;
+	margin: 10px;
+	float: right;
+}
+.books {
+	font-style: italic;
+}
+.authors {
+	font-style: normal;
+}
+.haiku {
+	margin-left: 25px;
+}
+table {
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+th, td {
+	padding: 3px;
+	vertical-align: middle;
+	width: 100px;
+	text-align: left;
+}
+.num {
+	background-color: lightblue;
+}
+.web {
+	background-color: red;
+}
+.gym{
+	background-color: white;
+}
+.eth {
+	background-color: pink;
+}
+.bre {
+	background-color: green;
+}
+.sof { 
+	background-color: purple;
+}
+.cs {
+	background-color: blue;
+}
