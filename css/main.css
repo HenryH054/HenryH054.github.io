@@ -1,60 +1,128 @@
+body::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("../img/background.jpg");
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: blur(5px);
+	z-index: -2;
+}
 
-body{
+body::after {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	z-index: -1;
+	pointer-events: none;
+}
+
+main {
 	max-width: 600px;
 	margin: auto;
 	box-sizing: border-box;
-	background-color: gray;
-	font-family: Arial;
+	font-family: Georgia;
+	color: lightgray;
+	font-size: 12pt;
 }
+
+h1 {
+	padding-top: 75px;
+	font-weight: bold;
+	font-size: 2.8em;
+	font-family: arial;
+}
+
+h2,
+h3,
+h4 {
+	margin-top: 1.5em;
+	margin-bottom: .5em;
+}
+
+p {
+	margin-bottom: .75em;
+}
+
 .res-section {
-	color:black;
+	color: black;
 }
+
 .headImage {
 	border-radius: 50%;
 	margin: 10px;
 	float: right;
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	object-position: 100% 0;
 }
+
 .books {
 	font-style: italic;
 }
+
 .authors {
 	font-style: normal;
 }
+
 .haiku {
 	margin-left: 25px;
 }
+
 table {
 	border-collapse: collapse;
+	background: #AAA;
+	color: #303030
 }
 
-table, th, td {
+table,
+th,
+td {
 	border: 1px solid black;
 }
 
-th, td {
+th,
+td {
 	padding: 3px;
 	vertical-align: middle;
 	width: 100px;
 	text-align: left;
 }
+
 .num {
 	background-color: lightblue;
 }
+
 .web {
 	background-color: red;
 }
-.gym{
+
+.gym {
 	background-color: white;
 }
+
 .eth {
 	background-color: pink;
 }
+
 .bre {
 	background-color: green;
 }
-.sof { 
-	background-color: purple;
+
+.sof {
+	background-color: #838;
 }
+
 .cs {
-	background-color: blue;
+	background-color: #33F;
 }
