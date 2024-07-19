@@ -1,0 +1,40 @@
+:root {
+	--header-footer-color: rgba(150, 150, 150, .8);
+	--header-footer-font-color: #222;
+	--main-background: rgba(0, 0, 0, 0.7);
+	--body-font-color: lightgray;
+}
+
+html {
+	background-image: url(../img/night_arch.jpg);
+	background-size: 100vw;
+}
+
+/* html { */
+/* 	background-color: pink; */
+/* } */
+/**/
+/* body { */
+/* 	color: var(--body-font-color); */
+/* } */
+/**/
+/* header { */
+/* 	background: var(--header-footer-color); */
+/**/
+/* 	color: var(--header-footer-font-color); */
+/* } */
+/**/
+/* main { */
+/* 	background: var(--main-background); */
+/**/
+/* } */
+/**/
+/* footer { */
+/* 	background: var(--header-footer-color); */
+/**/
+/* 	color: var(--header-footer-font-color); */
+/* } */
+/**/
+/* nav ul li a { */
+/* 	color: var(--header-footer-font-color); */
+/* } */

@@ -1,16 +1,68 @@
+/* TBH I refactored just about everything... I changed the styling on most tags at least a little, I changed the organization of tags that didn't change and I added a nice background image and blur effect to the page to keep it a little more interesting */
+:root {
+	--header-footer-color: rgba(30, 30, 30, .8);
+	--header-footer-font-color: #fff;
+	--main-background: rgba(255, 255, 255, 0.3);
+	--body-font-color: black;
+}
+
+body,
+header,
+main,
+footer {
+	display: flex;
+	width: 1000px;
+}
+
+html {
+	justify-content: center;
+	display: flex;
+	background-image: url(../img/arch_sunset.jpg);
+	background-position: center;
+}
+
 body {
 	font-family: Arial, sans-serif;
+	justify-content: center;
+	flex-direction: column;
+	color: var(--body-font-color);
 	margin: 0;
-	padding: 0;
 }
 
 header {
-	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem;
-	background: #333;
-	color: #fff;
+	background: var(--header-footer-color);
+	backdrop-filter: blur(10px);
+	color: var(--header-footer-font-color);
+}
+
+
+main {
+	margin: 0;
+	padding: 0;
+	background: var(--main-background);
+	backdrop-filter: blur(10px);
+	padding: 1rem;
+}
+
+footer {
+	margin-top: auto;
+	text-align: center;
+	padding: 1rem;
+	background: var(--header-footer-color);
+	backdrop-filter: blur(10px);
+	color: var(--header-footer-font-color);
+}
+
+p {
+	font-size: 1.1em;
+}
+
+.mainMap {
+	display: inline-flex;
+	float: right;
 }
 
 .logo {
@@ -35,103 +87,53 @@ nav ul li {
 }
 
 nav ul li a {
-	color: #fff;
+	color: var(--header-footer-font-color);
 	text-decoration: none;
 }
 
-main {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 1rem;
-	padding: 1rem;
-}
-
-.content-section {
-	background: #f9f9f9;
-	padding: 1rem;
-	border-radius: 5px;
-}
-
-footer {
-	text-align: center;
-	padding: 1rem;
-	background: #333;
-	color: #fff;
-}
-
 .content-section iframe {
-	width: auto;
 	width: 630px;
+	height: auto;
 }
 
 .content-section img {
-	width: auto;
-	width: 630px;
+	width: 500px;
+	height: auto;
 }
 
-@media only screen and (max-width: 1024px) {
-	header {
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
+@media (max-width: 1000px) {
+
+	html {
+		width: 100%;
+		margin: 0;
+		padding: 0;
 	}
 
-	.logo img {
-		margin-bottom: 1rem;
+	body,
+	header,
+	main,
+	footer {
+		display: flex;
+		width: 100%;
+		margin: 0;
+		padding: 0;
 	}
 
 	nav ul {
-		flex-direction: column;
-	}
-
-	nav ul li {
-		margin-left: 0;
-		margin-bottom: 0.5rem;
-	}
-
-	main {
-		grid-template-columns: 1fr;
-	}
-
-	.content-section {
-		padding: 0.5rem;
+		list-style: none;
+		display: block;
+		margin: 0;
+		margin-right: 3em;
+		padding: 0;
 	}
 
 	.content-section iframe {
-		width: 500px;
+		width: 60vw;
+		height: auto;
 	}
 
 	.content-section img {
-		width: 500px;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	header {
-		padding: 0.5rem;
-	}
-
-	.logo img {
-		height: 40px;
-	}
-
-	nav ul li a {
-		font-size: 0.9rem;
-	}
-
-	main {
-		padding: 0.5rem;
-	}
-
-	.content-section {
-		padding: 0.5rem;
-	}
-
-	.content-section iframe {
-		width: 360px;
-	}
-
-	.content-section img {
-		width: 360px;
+		width: 60vw;
+		height: auto;
 	}
 }
