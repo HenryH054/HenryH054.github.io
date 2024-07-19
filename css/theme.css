@@ -1,3 +1,4 @@
+/* Implements a dark mode toggle */
 :root {
 	--header-footer-color: rgba(150, 150, 150, .8);
 	--header-footer-font-color: #222;
@@ -9,32 +10,3 @@ html {
 	background-image: url(../img/night_arch.jpg);
 	background-size: 100vw;
 }
-
-/* html { */
-/* 	background-color: pink; */
-/* } */
-/**/
-/* body { */
-/* 	color: var(--body-font-color); */
-/* } */
-/**/
-/* header { */
-/* 	background: var(--header-footer-color); */
-/**/
-/* 	color: var(--header-footer-font-color); */
-/* } */
-/**/
-/* main { */
-/* 	background: var(--main-background); */
-/**/
-/* } */
-/**/
-/* footer { */
-/* 	background: var(--header-footer-color); */
-/**/
-/* 	color: var(--header-footer-font-color); */
-/* } */
-/**/
-/* nav ul li a { */
-/* 	color: var(--header-footer-font-color); */
-/* } */
