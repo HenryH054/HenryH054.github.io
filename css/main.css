@@ -101,6 +101,37 @@ nav ul li a {
 	height: auto;
 }
 
+#visitorForm {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#visitorForm li {
+	margin: 10px;
+	padding: auto;
+	margin-left: auto;
+	list-style-type: none;
+}
+
+#contact {
+	flex: 1 1 300px;
+	margin: 10px;
+}
+
+.errorMsg {
+	color: red;
+	display: none;
+}
+
+input.was-validated:invalid {
+	border: 1px solid red;
+}
+
+input.was-validated:valid {
+	border: 1px solid green;
+}
+
+
 @media (max-width: 1000px) {
 
 	html {

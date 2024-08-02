@@ -110,17 +110,98 @@ in a zero grade, a permanent record on file and possibly immediate failure of th
 				allowfullscreen></iframe>
 		</section>
 		<section id="contact" class="content-section" style="display:none;">
-			<h2>Contact Us</h2>
-			<p> Find a trail or even just let us know what you think</p>
+			<form id="visitorForm" novalidate>
+				<ul>
+					<li>
+						<label for="firstName">First Name:</label>
+						<br>
+						<input type="text" id="firstName" required>
+						<div class="errorMsg"></div>
+					</li>
+					<li>
+						<label for="lastName">Last Name:</label>
+						<br>
+						<input type="text" id="lastName" required>
+						<div class="errorMsg"></div>
+					</li>
 
-			<p>Email: mountainbiking@example.com</p>
-			<p>Phone: 801-999-9999</p>
+					<li>
+						<label for="address">Address:</label>
+						<br>
+						<input type="text" id="address" required>
+						<div class="errorMsg"></div>
+					</li>
+
+					<li>
+						<label for="city">City:</label>
+						<br>
+						<input type="text" id="city" required>
+						<div class="errorMsg"></div>
+					</li>
+
+					<li>
+						<label for="state">State:</label>
+						<br>
+						<input type="text" id="state" required>
+						<div class="errorMsg"></div>
+					</li>
+
+					<li>
+						<label for="zip">Zip Code:</label>
+						<br>
+						<input type="text" id="zip" required>
+						<div class="errorMsg"></div>
+					</li>
+
+					<li>
+						<label for="phone">Cell Phone:</label>
+						<br>
+						<input type="text" id="phone" required>
+						<div class="errorMsg"></div>
+					</li>
+
+					<li>
+						<label for="email">Email:</label>
+						<br>
+						<input type="email" id="email" required>
+						<div class="errorMsg"></div>
+					</li>
+					<li>
+
+						<label>How did you find my page?</label>
+						<br>
+						<input type="checkbox" id="internet" name="find" value="Internet">
+						Internet
+						<br>
+						<input type="checkbox" id="friend" name="find" value="Friend"> Friend
+						<br>
+						<input type="checkbox" id="google" name="find" value="Google"> Google
+						<div class="errorMsg"></div>
+					</li>
+
+					<li>
+						<label for="comments">Comments:</label>
+						<br>
+						<textarea id="comments"></textarea>
+					</li>
+
+					<li>
+						<button id="submitBtn" type="submit">Submit</button>
+					</li>
+				</ul>
+			</form>
+		</section>
+		<section>
+			<div id="thankYouMessage" style="display:none;">Thank you for your visit!</div>
 		</section>
 	</main>
 	<footer>
 		<p>&copy; 2024 Mountain Biking Adventures</p>
 	</footer>
 	<script src="js/main.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/page.js"></script>
+
 </body>
 
 </html>
